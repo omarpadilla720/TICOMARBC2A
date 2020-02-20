@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+							<html>
+							<head>
+
+<TITLE>CONTRASEÑA</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function Saltar(pal){
+if (pal=='150619'){window.location="privado.html"}
+else {alert ('Respuesta equivocada')}
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+#navegador ul{
+   list-style-type: none;
+   text-align: center;
+}
+#navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+#navegador li a {
+   padding: 2px 7px 2px 7px;
+   color: black;
+   background-color: #FFFF00;
+   border: 1px solid black;
+   text-decoration: none;
+}
+#navegador li a:hover{
+   background-color: #333333;
+   color: #ffffff;
+}
+</style>
+							</head>
+							<body>
+<body background="fondo6.jpg" bgcolor="pink">
+<div id="navegador">
+<ul>
+<font face="Comic Sans MS,arial,verdana">
+<li><a href="index.html">INICIO</a></li>
+</font>
+</ul>
+</div>
+<marquee behavior="alternate">
+    <font face="Comic Sans MS,arial,verdana">
+<p><H1><font color="white"><TABLE STYLE="BORDER:DASHED 10PX LIME"> 
+<TR><TD><script>
+
+var text="ESTA PÁGINA ES PRIVADA" // tu texto
+var speed=80 // velocidad de movimiento 
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script></TD></TR> 
+</TABLE></font color="red"></H1></p>
+</font>
+  </marquee>
+<body align="center">
+<FORM>
+<font face="Comic Sans MS,arial,verdana"><font color="white">
+<body bgcolor="white">
+<H1><P style="background-color:black;">Introduce la palabra clave</P></H1>
+</font>
+<INPUT TYPE="Password" NAME="palclave" SIZE=25 VALUE="">
+<INPUT TYPE="button" VALUE="Acceder" onClick="Saltar(this.form.palclave.value)"></P>
+</FORM>
+<font face="Comic Sans MS,arial,verdana"><font color="white">
+<body bgcolor="white">
+<H5><P style="background-color:black;">la clave es 150619</P></H5>
+</body align="center">
+
+							</body>
+							</html>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+							<html>
+							<head>
+<title>INICIO DE LA PAG. WEB</title>
+<meta name="theme-color" content="#083756">
+<link rel="icon" sizes="192x192" href="mike.webp">
+
+<style type="text/css">
+#navegador ul{
+   list-style-type: none;
+   text-align: center;
+}
+#navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 0px 0 0;
+}
+#navegador li a {
+   padding: 2px 7px 2px 7px;
+   color: black;
+   background-color: #FC9500;
+   border: 1px solid #ccc;
+   text-decoration: none;
+}
+#navegador li a:hover{
+   background-color: #333333;
+   color: #ffffff;
+}
+</style>
+							</head>
+							<body>
+<audio src="audio.mp3" preload="none" controls loop></audio>
+<div id="navegador">
+<ul>
+<font face="Comic Sans MS,arial,verdana">
+<li><a href="juego_laberinto2.html">Juego</a></li>
+<li><a href="hoja_de_estilos.html">F. del alumno</a></li>
+<li><a href="videos_random2.html">Videos random</a></li>
+<li><a href="memes.html">Memes</a></li>
+</font>
+</ul>
+</div>
+<body background="fondo1.jpg" bgcolor="pink">
+  <marquee behavior="alternate">
+    <font face="Comic Sans MS,arial,verdana">
+<p><H1><font color="black"><TABLE STYLE="BORDER:DASHED 10PX LIME"> 
+<TR><TD><mark><script>
+
+var text="BIENVENIDO" // tu texto
+var speed=80 // velocidad de movimiento 
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script></mark></TD></TR> 
+</TABLE></font color="red"></H1></p>
+</body align="center">
+</font>
+  </marquee>
+<br> 
+<font face="Comic Sans MS,arial,verdana">
+<h1>Hola amigo, esta es una página web de entretenimiento &#128519;</h1>
+<br>
+<marquee direction="down" width="500" height="500" behavior="alternate" style="border:solid">
+  <marquee behavior="alternate">
+    <img style="-webkit-user-select: width="250" height="250";" src="http://iesmartinezuribarri.centros.educa.jcyl.es/sitio/upload/img/Insti_02.gif">
+</marquee>
+</br>
+<body background:"fondo.jpg">
+</body background:"fondo.jpg">
+<body align="center">
+</marquee><body>
+<H1><p style="font-family:Brush Script MT;">Hola a todos, esta es mi pagina web donde os enseñare cosas muy divertidas</p></H1>
+<p><font face="Comic Sans MS,arial,verdana"><strong>Aqui te dejo un blog donde podras aprendes cosas de las TICs <a href="https://tic2uribarri.blogspot.com/">HAZ CLIC AQUI</a><br />
+¡Es un buen sitio web! &#128520</p>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1580831367741!6m8!1m7!1s_pJEVT2yJSd61iKSb85FLA!2m2!1d40.96815144674844!2d-5.656306906338427!3f71.40291583003167!4f-2.178811455903741!5f3.325193203789971" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+							</body>
+							</html>
